@@ -4,8 +4,6 @@ import java.awt.EventQueue;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.text.DecimalFormat;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -73,19 +71,14 @@ public class frm10 extends JFrame {
 		btnCalcular.addActionListener(new ActionListener() {public void actionPerformed(ActionEvent e) { btnCalcular_Click(); } });
 	}
 	private void btnCalcular_Click() {
-		int numero, C1, C2, C3, C4;
-		String c1, c2, c3, c4;
-		numero = Integer.parseInt(txtNumero.getText() );
+		int numero = Integer.parseInt(txtNumero.getText());
 		
-		C4 = numero % 10;
-		C3 = numero % 100 / 10;
-		C2 = numero % 1000 /100;
-		C1 = numero % 10000 / 1000;
+		String c1 = Integer.toString(numero / 1000);
+		String c2 = Integer.toString((numero % 1000) / 100);
+		String c3 = Integer.toString(((numero % 1000) % 100) / 10);
+		String c4 = Integer.toString(((numero % 1000) % 100) % 10);
 		
-		
-		
-		
-		System.out.println(c4 + c3 + c2 + c1);
+		txtInvertido.setText(c4 + c3 + c2 + c1);
 			
 		}				
 	}
