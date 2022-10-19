@@ -6,8 +6,8 @@ num = input("Número: ")
 
 #Determinar si las cifras son consectuivas
 if int(num[1]) == int(num[2]) - 1 and int(num[1]) == int(num[0]) + 1:
-    print("Cifras consectuvias ascendente")
+    print("Cifras consecutivas ascendente")
 elif int(num[1]) == int(num[2]) + 1 and int(num[1]) == int(num[0]) - 1:
-    print("Cifras consectuvias descendente")
+    print("Cifras consecutivas descendente")
 else:
     print("Cifras no consecutivas")
