@@ -14,7 +14,7 @@ importeA = precioA * cantidadA
 importeB = precioB * cantidadB
 
 if cantidadA > 50: descuentoA = 15 / 100 * importeA
-if cantidadA > 60: descuentoB = 10 / 100 * importeB
+if cantidadB > 60: descuentoB = 10 / 100 * importeB
 
 totalA = importeA - descuentoA
 totalB = importeB - descuentoB
